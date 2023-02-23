@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+#table {
+  display: flex;
+  margin: 10px
+}
+
+.column {
+  flex: 50%;
+  border: 1px solid #282c34;
+  padding: 10px;
+  
+}
+
+/* #table {
+  display: flex;
+  margin: 10px;
+  border: #282c34 1px solid;
+  justify-content: center;
+  padding: 100px;
+} 
+
+#table div {
+  border: 1px solid pink;
+  flex-basis: 100px;
+  padding: 10px;
+  margin: 10px
+}
+*/
