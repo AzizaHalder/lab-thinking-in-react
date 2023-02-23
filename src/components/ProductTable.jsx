@@ -1,14 +1,17 @@
-// import { useState } from 'react';
-// import jsonData from '../data.json';
-// import ProductRow from './ProductRow';
+import ProductRow from './ProductRow';
 
-function ProductTable() {
-  //   const [productTable, setProductTable] = useState(jsonData);
+function ProductTable(props) {
   return (
-    <div id="table">
-      <div className="column">Name</div>
-      <div className="column">Price</div>
-      {/* <ProductRow /> */}
+    <div>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+        {props.products.map((singleProduct) => {
+          return <ProductRow key={singleProduct.id} products={singleProduct} />;
+        })}
+      </table>
     </div>
   );
 }

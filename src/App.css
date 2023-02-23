@@ -37,7 +37,11 @@
   }
 }
 
-#table {
+table, th, td {
+  border: 1px solid black;
+}
+
+/* #table {
   display: flex;
   margin: 10px
 }
@@ -47,7 +51,7 @@
   border: 1px solid #282c34;
   padding: 10px;
   
-}
+} */
 
 /* #table {
   display: flex;
